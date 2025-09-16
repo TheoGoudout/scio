@@ -87,8 +87,8 @@ class Gram(BaseScoreClassif):
     separate_diagonal: bool = False  # [Gram, appendix C]
     calib_labels: LabelKindLike = "pred"  # [Gram]
 
-    def _check_params(self, _n_calib: int) -> None:
-        super()._check_params(_n_calib)
+    def _check_params(self, n_calib: int) -> None:
+        super()._check_params(n_calib)
         check(0 < self.cut_off < 0.5)  # noqa: PLR2004 (magic value 0.5)
 
     @torch.no_grad()

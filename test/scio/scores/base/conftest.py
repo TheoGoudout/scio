@@ -53,8 +53,8 @@ def make_score() -> Callable[[object, object, object], BaseScore]:
             obj_get_conformity: object = obj_get_conformity_
             obj: object
 
-            def _check_params(self, _n_calib: int) -> None:
-                super()._check_params(_n_calib)
+            def _check_params(self, n_calib: int) -> None:
+                super()._check_params(n_calib)
                 assert self.obj_check_params is obj_check_params_, "_check_params"
 
             def calibrate(self, _calib_data: Tensor, _calib_labels: Any) -> None:  # noqa: ANN401 (Any)

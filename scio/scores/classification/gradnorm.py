@@ -44,8 +44,8 @@ class GradNorm(BaseScoreClassif):
     grad_norm: float = 1.0  # [GradNorm] default
     discard_functional_forward: bool = False
 
-    def _check_params(self, _n_calib: int) -> None:
-        super()._check_params(_n_calib)
+    def _check_params(self, n_calib: int) -> None:
+        super()._check_params(n_calib)
         check(self.temperature > 0)
 
     def calibrate(self, calib_data: Tensor, calib_labels: Tensor) -> None:

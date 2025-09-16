@@ -70,8 +70,8 @@ class DeepMahalanobis(BaseScoreClassif):
         """Check ``_relative`` flag (RMD-related)."""
         check(not self._relative)
 
-    def _check_params(self, _n_calib: int) -> None:
-        super()._check_params(_n_calib)
+    def _check_params(self, n_calib: int) -> None:
+        super()._check_params(n_calib)
         self._check_relative()
         check(self.fgm_norm >= 1)
 

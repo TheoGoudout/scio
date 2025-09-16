@@ -47,8 +47,8 @@ class ReAct(BaseScoreClassif):
     symmetric: bool = False  # [ReAct]
     per_layer: bool = False  # [ReAct]
 
-    def _check_params(self, _n_calib: int) -> None:
-        super()._check_params(_n_calib)
+    def _check_params(self, n_calib: int) -> None:
+        super()._check_params(n_calib)
         check(0.5 * self.symmetric < self.percentile / 100 <= 1)
 
     @torch.no_grad()

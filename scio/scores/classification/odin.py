@@ -41,8 +41,8 @@ class ODIN(BaseScoreClassif):
     epsilon: float = 0.0
     fgm_norm: float = torch.inf  # [ODIN]
 
-    def _check_params(self, _n_calib: int) -> None:
-        super()._check_params(_n_calib)
+    def _check_params(self, n_calib: int) -> None:
+        super()._check_params(n_calib)
         check(self.temperature > 0)
         check(self.fgm_norm >= 1)
 

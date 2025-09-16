@@ -66,8 +66,8 @@ class FeatureSqueezing(BaseScoreClassif):
     dist_norm: float = 1.0  # [Feat]
     aggregation: AggrNameLike | float = "max"
 
-    def _check_params(self, _n_calib: int) -> None:
-        super()._check_params(_n_calib)
+    def _check_params(self, n_calib: int) -> None:
+        super()._check_params(n_calib)
         self.squeezers_fn = self.get_squeezers()
         check(len(self.squeezers_fn) > 0)
 

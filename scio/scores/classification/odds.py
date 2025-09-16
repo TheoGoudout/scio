@@ -54,8 +54,8 @@ class Odds(BaseScoreClassif):
     # batch_size: int = 2**13  # noqa: ERA001 (commented code)
     rng_seed: int | None = 0
 
-    def _check_params(self, _n_calib: int) -> None:
-        super()._check_params(_n_calib)
+    def _check_params(self, n_calib: int) -> None:
+        super()._check_params(n_calib)
         check(self.noise_samples > 0)
 
     @torch.no_grad()

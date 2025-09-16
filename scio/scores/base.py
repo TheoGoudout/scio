@@ -120,10 +120,8 @@ class BaseScore[Labels: Iterable, Conformities: Iterable](ParamClass):
 
         This method is called during :meth:`fit` calls. As such, the
         number of calibration samples ``n_calib`` is known and can be
-        used. If not, name it ``_n_calib`` per convention.
-
-        Except for base class, it should almost always contain a
-        ``super()._check_params(n_calib)`` call.
+        used (if not, name it ``_n_calib`` per convention). It should
+        almost always contain a ``super()._check_params(n_calib)`` call.
 
         Arguments
         ---------
