@@ -8,7 +8,7 @@ Installation
 
 We recommend installing ``scio`` from `PyPI <https://pypi.org/project/scio-pypi>`_::
 
-	pip install scio-pypi  # the `-pypi` suffix will be removed soon
+	pip install scio-pypi
 
 If you wish to install from source or wheels manually, you can download `release assets <https://github.com/ThalesGroup/scio/releases>`_ directly on the GitHub repository, or clone its current state with:
 

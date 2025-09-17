@@ -1,6 +1,6 @@
 # Contributors ✨
 
-Thanks to [**these wonderful people**](https://sciortd.readthedocs.io/latest/contributors.html) who make this project better! 💙
+Thanks to [**these wonderful people**](https://sciortd.readthedocs.io/stable/contributors.html) who make this project better! 💙
 
 ----
 

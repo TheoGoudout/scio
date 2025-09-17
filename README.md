@@ -3,13 +3,14 @@
 [![pypi][pypi_img]][pypi_target]
 [![typed][typed_img]][typed_target]
 [![license][license_img]][license_target]
+[![doi][doi_img]][doi_target]
 [![pipeline][pipeline_img]][pipeline_target]
 [![coverage][coverage_img]][coverage_target]
 [![ruff][ruff_img]][ruff_target]
 [![uv][uv_img]][uv_target]
 
 [os_img]: https://img.shields.io/badge/cross--platform-%E2%9C%93-blue "Tested on Ubuntu & Windows"
-[os_target]: https://sciortd.readthedocs.io/latest/user_guide/installation_compatibility.html#os-compatibility
+[os_target]: https://sciortd.readthedocs.io/stable/user_guide/installation_compatibility.html#os-compatibility
 
 [python_img]: https://img.shields.io/badge/python-3.12%20|%203.13-blue "Compatible Python versions"
 [python_target]: https://devguide.python.org/versions
@@ -22,6 +23,9 @@
 
 [license_img]: https://img.shields.io/github/license/ThalesGroup/scio "Distributed under"
 [license_target]: https://github.com/ThalesGroup/scio?tab=MIT-1-ov-file#MIT-1-ov-file
+
+[doi_img]: https://zenodo.org/badge/DOI/10.5281/zenodo.17160013.svg "Zenodo archive"
+[doi_target]: https://doi.org/10.5281/zenodo.17160013
 
 [pipeline_img]: https://github.com/ThalesGroup/scio/actions/workflows/ci.yml/badge.svg?branch=release "Pipeline status"
 [pipeline_target]: https://github.com/ThalesGroup/scio/actions
@@ -57,14 +61,14 @@
 
 ```bash
 # Install from PyPI
-pip install scio-pypi  # The `-pypi` suffix will be removed soon
+pip install scio-pypi
 ```
 
 ----
 
 ### Demo 🎮
 <p align="center">
-  <a href="https://sciortd.readthedocs.io/latest/auto_tutorials/visualizing_and_evaluating_ood_detection_algorithms.html"
+  <a href="https://sciortd.readthedocs.io/stable/auto_tutorials/visualizing_and_evaluating_ood_detection_algorithms.html"
      title="Click to follow along the tutorial!">
     <img src="https://github.com/ego-thales/scio-assets/blob/main/assets/demo.gif" alt="demo gif">
   </a>
@@ -76,10 +80,17 @@ The full documentation can be found [**here**][docs]. You may learn more [about 
 
 ### Citing `scio` 🎓
 <!-- START CITING -->
-If our library contributed to your research or project, please consider citing it. For convenience, we provide the following BibTeX entry.
+If our library contributed to your research or project, please consider citing it. For convenience, we provide the following BibTeX entry for the entire code base. 
 ```BibTeX
-Coming soon...
+@software{ThalesGroup/scio,
+  title = {scio: {C}onfidence scores for {N}eural {N}etworks, made easy!},
+  author = {Élie Goudout and the scio community},
+  url = {github.com/ThalesGroup/scio},
+  doi = {10.5281/zenodo.17160013},
+  year = {2025}
+}
 ```
+To reference a particular release, get the DOI <a href="https://zenodo.org/search?q=parent.id%3A17160013&f=allversions%3Atrue&l=list&p=1&s=10&sort=version" title="Browse all releases">here</a>.
 <!-- END CITING -->
 
 ### Contributing 💫
@@ -101,13 +112,13 @@ This package is distributed under the [MIT license](LICENSE). The use of NVIDIA 
 
 <!-- References -->
 [docs]: https://sciortd.readthedocs.io
-[about]: https://sciortd.readthedocs.io/latest/user_guide/what_is_scio.html#what-is-scio
-[get_started]: https://sciortd.readthedocs.io/latest/user_guide/installation_compatibility.html#installation-compatibility
-[tutorials]: https://sciortd.readthedocs.io/latest/auto_tutorials/index.html
-[api]: https://sciortd.readthedocs.io/latest/api_references.html
-[references]: https://sciortd.readthedocs.io/latest/bib_references.html
-[citing]:  https://sciortd.readthedocs.io/latest/citing_scio.html
+[about]: https://sciortd.readthedocs.io/stable/user_guide/what_is_scio.html#what-is-scio
+[get_started]: https://sciortd.readthedocs.io/stable/user_guide/installation_compatibility.html#installation-compatibility
+[tutorials]: https://sciortd.readthedocs.io/stable/auto_tutorials/index.html
+[api]: https://sciortd.readthedocs.io/stable/api_references.html
+[references]: https://sciortd.readthedocs.io/stable/bib_references.html
+[citing]:  https://sciortd.readthedocs.io/stable/citing_scio.html
 [issues]: https://github.com/ThalesGroup/scio/issues
 [discussions]: https://github.com/ThalesGroup/scio/discussions
 [pulls]: https://github.com/ThalesGroup/scio/pulls
-[contributors]: https://sciortd.readthedocs.io/latest/contributors.html
+[contributors]: https://sciortd.readthedocs.io/stable/contributors.html
