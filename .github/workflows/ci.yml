@@ -11,10 +11,15 @@ jobs:
     timeout-minutes: 15
     strategy:
       matrix:
-        os: ["ubuntu-latest", "windows-latest"]  # Remove MacOS (billing + github.com/ThalesGroup/scio/issues/2)
+        os: ["ubuntu-22.04", "windows-latest"]  # Remove MacOS (billing + github.com/ThalesGroup/scio/issues/2)
         python-version: ["3.12", "3.13"]
     runs-on: ${{ matrix.os }}
     steps:
+      - name: Collect Workflow Telemetry
+        uses: TheoGoudout/workflow-telemetry-action@32fae7f474780a2e1ce0e33ac68f243d00ccc57e
+        with:
+          save_raw_stats: true
+
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -71,7 +76,7 @@ jobs:
         run: exit 1
 
       - name: Upload coverage report to Codecov
-        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.13'
+        if: matrix.os == 'ubuntu-22.04' && matrix.python-version == '3.13'
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
