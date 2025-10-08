@@ -39,7 +39,7 @@ dependencies = [
     "scikit-learn>=1.6.1",
     "scipy>=1.16",
     "seaborn>=0.13.2",
-    "torch>=2.3",
+    "torch>=2.6",
     "torchinfo>=1.8",
 ]
 [dependency-groups]
