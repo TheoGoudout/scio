@@ -14,7 +14,7 @@ You may also refer to the :doc:`api_references/misc` section, detailing most of 
 Note that all submodules are lazily imported and accessible as top-level attributes. For example::
 
    import scio
-   scio.eval.summary(...)  # Directly available
+   scio.eval.summary(...)  # Lazily imported
 
 .. rubric:: Table of content
 
