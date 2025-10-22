@@ -134,9 +134,6 @@ convention = "numpy"
     "PLR2004",                       # Magic values
     "T201",                          # Print statements
 ]
-".github/scripts/*.py" = [
-    "INP001",                        # Implicit namespace package
-]
 
 [tool.ruff.format]
 docstring-code-format = true  # Enable reformatting of code snippets in docstrings.
