@@ -89,7 +89,7 @@ For developers using `uv`, these can easily be checked with the following.
 ```bash
 # From root directory
 uv run pytest
-uv run mypy
+uv run mypy  # Use `uv run --group=doc mypy` if doc was updated
 uvx ruff format --diff
 uvx ruff check
 ```
@@ -98,12 +98,12 @@ If your contribution changes the documentation, you can rebuild it with the foll
 
 ```bash
 # Ubuntu or MacOS
-uv run make -C docs
+uv run --group=doc make -C docs
 ```
 
 ```powershell
 # Windows
-uv run cmd /c "docs\make.bat"
+uv run --group=doc cmd /c "docs\make.bat"
 ```
 
 #### First time codebase contributors

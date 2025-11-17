@@ -31,7 +31,7 @@ jobs:
 
       - name: Run mypy
         run: |
-          uv -v run mypy
+          uv -v run --group=doc mypy
 
       - name: Build & Install
         run: |
@@ -39,18 +39,18 @@ jobs:
           uv -v pip install dist/scio_pypi-1.0.2.dev0-py3-none-any.whl
 
       - name: Build docs (Posix)
-        if: matrix.os != 'windows-latest' && matrix.python-version != '3.14'  # github.com/ThalesGroup/scio/issues/38
+        if: matrix.os != 'windows-latest'
         env:
           SPHINXOPTS: --fail-on-warning
         run: |
-          uv -v run make -C docs
+          uv -v run --group=doc make -C docs
 
       - name: Build docs (Windows)
-        if: matrix.os == 'windows-latest' && matrix.python-version != '3.14'  # github.com/ThalesGroup/scio/issues/38
+        if: matrix.os == 'windows-latest'
         env:
           SPHINXOPTS: --fail-on-warning
         run: |
-          uv -v run cmd /c "docs\\make.bat"
+          uv -v run --group=doc cmd /c "docs\\make.bat"
 
       - name: Run pytest
         id: run-pytest
