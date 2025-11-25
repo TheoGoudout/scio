@@ -103,7 +103,15 @@ class BaseDiscriminativePower(ParamClass):
 
 
 class AUC(BaseDiscriminativePower):
-    """AUC for ROC, potentially partial — in which case normalized.
+    r"""AUC for ROC, potentially partial — in which case normalized.
+
+    With the default arguments, one has
+
+    .. math::
+
+        AUC = \mathbb{P}(\text{score}_{\text{OoD}}<\text{score}_{\text{InD}}),
+
+    when sampling from the reference population.
 
     Arguments
     ---------
