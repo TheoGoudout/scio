@@ -44,12 +44,12 @@ class ROC:
     .. role:: bsc
        :class: bsc
 
-    If a negative (*i.e.* InD) sample has a score of :math:`-\infty`,
-    then the ROC curve would theoretically start with a *nonzero*
-    :attr:`~ROC.FPR`. In this case, for consistency in
-    :ref:`discriminative_power` definitions, we artificially add the
-    point :math:`(0, 0)`, corresponding to the trivial :bsc:`False`
-    classifier.
+    In cases where the ROC curve would theoretically begin with a
+    *nonzero* :attr:`~ROC.FPR`, we artificially add the point
+    :math:`(0, 0)` — corresponding to the trivial :bsc:`False`
+    classifier —, for consistency in :ref:`discriminative_power`
+    definitions. This situation arises when a negative (*i.e.* InD)
+    sample is assigned a score of :math:`-\infty`.
 
     """
 
