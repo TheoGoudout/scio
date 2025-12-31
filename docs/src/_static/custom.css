@@ -1,0 +1,141 @@
+/* Remove sphinxcontrib-bibtex backrefs
+ * https://github.com/mcmtroffaes/sphinxcontrib-bibtex/issues/364#issuecomment-2904415251
+ */
+.backrefs {
+  font-size: 0;
+}
+.backrefs:after {
+  font-size: initial;
+  content: "\00a0";
+}
+
+
+/* Suppress sphinx-gallery "Out:" before console display */
+.sphx-glr-script-out::before {
+  content: none
+}
+
+/* Hide download link note */
+div.sphx-glr-download-link-note {
+    display: none;
+}
+
+/* Re-style the download button, from matplotlib */
+div.sphx-glr-download a {
+    background-color: #E3F0F6;
+    background-image: none;
+    color: #11557c;
+    border: 0;
+}
+div.sphx-glr-download a:hover {
+    background-color: #BCD4DF;
+}
+
+/* Style for emoji hovering in "Contributors ✨" page */
+/* Basic emoji style */
+.contrib-emoji {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 4px;
+  border-radius: 10%;
+  transition: background-color 0.3s ease, box-shadow 0.1s ease;
+}
+/* Highlight on hover */
+.contrib-emoji:hover {
+  background-color: rgba(255, 255, 80, 0.3);
+  box-shadow: 0 0 3px rgba(255, 255, 150, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+}
+/* Tooltip arrow */
+.contrib-emoji::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%) translateY(2px);
+  border: 5px solid transparent;
+  border-top-color: #333;
+  transition: opacity 0.1s ease-in-out;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+/* Tooltip text box */
+.contrib-emoji::after {
+  content: attr(legend);
+  color: #fff;
+  font-size: 0.85em;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%) translateY(-6px);
+  background-color: #333;
+  padding: 2px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.1s ease-in-out;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+/* Show tooltip on hover */
+.contrib-emoji:hover::after,
+.contrib-emoji:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Index cards */
+.card-container {
+  display: flex;
+  aspect-ratio: 3.5;
+  width: 100%;
+  background: var(--sd-color-card-background);
+  border: 2px solid var(--sd-color-card-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 0.5rem;
+}
+.card-image img {
+  width: auto;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.card-text {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 1rem;
+  font-size: clamp(0.75rem, 1.2vw, 0.9rem);
+  line-height: 1.2;
+  overflow: hidden;
+}
+.card-text > div:first-child {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Bold italic */
+.bolditalic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Bold small caps */
+.bsc {
+  font-weight: bold;
+  font-variant: small-caps;
+}

@@ -1,0 +1,23 @@
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+# Required
+version: 2
+
+# Set the OS and Python version. Install uv and build/install docs
+build:
+  os: ubuntu-24.04
+  tools:
+    python: "3.14"
+  commands:
+    - pip install uv
+    # Clone the repo hub first to avoid log in sphinx-gallery tutorials
+    - git clone --branch hub https://github.com/ThalesGroup/scio.git ~/.cache/torch/hub/ThalesGroup_scio_hub
+    - uv run --group=doc make -C docs
+    - mkdir -p $READTHEDOCS_OUTPUT
+    - mv docs/_build/html $READTHEDOCS_OUTPUT
+
+# Sphinx configuration
+sphinx:
+   configuration: docs/src/conf.py
+   fail_on_warning: true

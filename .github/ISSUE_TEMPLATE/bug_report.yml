@@ -1,0 +1,71 @@
+name: Bug report
+description: Create a report to help us improve
+title: "[BUG] "
+labels: bug
+
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thank you for taking the time to file a bug report! Before
+        creating a new issue, please make sure to take a few minutes to
+        check the issue tracker for existing issues about the bug.
+    
+  - type: textarea
+    attributes: 
+      label: "Describe the bug:"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "How to reproduce:"
+      description: >
+        Please try your best to provide a [Minimal Reproducible
+        Example](https://en.wikipedia.org/wiki/Minimal_reproducible_example).
+        It should be self-contained – _i.e._ can be copy-pasted into the
+        Python interpreter or ran as-is via `python myproblem.py`.
+      placeholder: |
+        import scio
+        # Your code here
+      render: python
+    validations:
+      required: true
+  
+  - type: textarea
+    attributes:
+      label: "Error message:"
+      description: |
+        If any, please include the _full_ error message – after removing all
+        **sensitive** details.
+      placeholder: "<traceback>"
+      render: shell
+
+  - type: textarea
+    attributes:
+      label: "Environment information:"
+      description: |
+        Please copy paste the output of the following Python snippet.
+        ```python
+        import platform
+
+        try:
+            import scio
+        except ImportError:
+            scio = None
+      
+        scio_version = "**could not import**" if scio is None else scio.__version__
+        print(f"""
+        `scio` version: {scio_version}
+        Python version: {platform.python_version()}
+        Platform: {platform.system()} ({platform.version()})
+        Machine type: {platform.machine()}
+        """)
+        ```
+      placeholder: |
+        `scio` version: 1.0.0
+         Python version: 3.14.0
+         Platform: Linux (#67~22.04.1-Ubuntu ...)
+         Machine type: x86_64
+    validations:
+      required: true
