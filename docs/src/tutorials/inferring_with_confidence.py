@@ -13,7 +13,7 @@ Inferring with Confidence
 # data. Both should be naturally defined by your own use-case. For this
 # tutorial, we use a lightweight `Tiniest
 # <https://github.com/xvel/cifar10-tiniest>`_ architecture trained on
-# CIFAR10 and hosted on `our hub
+# CIFAR10 and hosted on `ThalesGroup's hub
 # <https://github.com/ThalesGroup/scio/tree/hub>`_, and use random
 # calibration data.
 

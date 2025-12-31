@@ -12,19 +12,19 @@ Everyone participating in the `scio` community, and in particular in our issue t
 
 #### Opening issues
 
-Open a new [issue](https://github.com/ThalesGroup/scio/issues) if you find some bug or you want to propose a new feature. Please first check that this will not create duplicates.
+Open a new [issue](https://github.com/eliegoudout/scio/issues) if you find some bug or you want to propose a new feature. Please first check that this will not create duplicates.
 
 Make sure that your proposal is clearly written, preferably in English. In case you are reporting a bug, please include all relevant information, such as the software version and machine information. Also try to provide [Minimal Reproducible Examples](https://en.wikipedia.org/wiki/Minimal_reproducible_example).
 
 #### Discussing the project
 
-You can open a [discussion](https://github.com/ThalesGroup/scio/discussions) for any topic related with this package. Do you have doubts about how to use the package? Open a discussion! Do you want to show related projects, recent research or some use case for this software? Open a discussion!
+You can open a [discussion](https://github.com/eliegoudout/scio/discussions) for any topic related with this package. Do you have doubts about how to use the package? Open a discussion! Do you want to show related projects, recent research or some use case for this software? Open a discussion!
 
 You are also encouraged to answer the discussions of other users and participate actively in the discussions forum.
 
 #### Improving the documentation
 
-Do you feel that the documentation could be clearer? Did you find a typo? Do not hesitate to report that in an [issue](https://github.com/ThalesGroup/scio/issues) or even propose your own fix in a [pull request](https://github.com/ThalesGroup/scio/pulls). Identifying even a single misspell is relevant, there's no such thing as a "useless" issue or PR!
+Do you feel that the documentation could be clearer? Did you find a typo? Do not hesitate to report that in an [issue](https://github.com/eliegoudout/scio/issues) or even propose your own fix in a [pull request](https://github.com/eliegoudout/scio/pulls). Identifying even a single misspell is relevant, there's no such thing as a "useless" issue or PR!
 
 Advanced users can also propose the addition of new pages and examples. In case you want to do that, please open an issue to discuss that first.
 
@@ -37,13 +37,13 @@ In any case, make sure that you own the rights to the software and are ok with r
 
 ## Contributing to the codebase
 
-This is mainly done through [pull requests](https://github.com/ThalesGroup/scio/pulls).
+This is mainly done through [pull requests](https://github.com/eliegoudout/scio/pulls).
 
 #### How to make a pull request
 
 ##### 1. Fork the `scio` repository
 
-Within GitHub, navigate to <https://github.com/ThalesGroup/scio> and fork the repository.
+Within GitHub, navigate to <https://github.com/eliegoudout/scio> and fork the repository.
 
 ##### 2. Create a new branch
 
@@ -108,4 +108,4 @@ uv run --group=doc cmd /c "docs\make.bat"
 
 #### First time codebase contributors
 
-If you're looking for things to help with, browse our [issue tracker](https://github.com/ThalesGroup/scio/issues), in particular looking for [good first issues](https://github.com/ThalesGroup/scio/labels/good%20first%20issue).
+If you're looking for things to help with, browse our [issue tracker](https://github.com/eliegoudout/scio/issues), in particular looking for [good first issues](https://github.com/eliegoudout/scio/labels/good%20first%20issue).

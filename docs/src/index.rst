@@ -14,7 +14,7 @@ Welcome to ``scio``'s documentation!
 
 This Python library is meant for ML engineers, research scientists or amateur programmers, who wish to augment their Neural Network predictions with **confidence scores**. It applies to **trained models**, facilitating collaborative work and real-world deployment!
 
-In this documentation, you will find hands-on :doc:`auto_tutorials/index`, extensive :doc:`api_references` and scientific literature :doc:`bib_references`. If you need to reach out to our community, please visit the `GitHub repository <https://github.com/ThalesGroup/scio>`_.
+In this documentation, you will find hands-on :doc:`auto_tutorials/index`, extensive :doc:`api_references` and scientific literature :doc:`bib_references`. If you need to reach out to our community, please visit the `GitHub repository <https://github.com/eliegoudout/scio>`_.
 
 .. grid:: 1 1 2 2
    :gutter: 2
@@ -77,7 +77,7 @@ In this documentation, you will find hands-on :doc:`auto_tutorials/index`, exten
          </div>
 
    .. grid-item-card::
-      :link: https://www.github.com/ThalesGroup/scio
+      :link: https://www.github.com/eliegoudout/scio
 
       .. raw:: html
 
@@ -107,6 +107,6 @@ In this documentation, you will find hands-on :doc:`auto_tutorials/index`, exten
 
 *The source code for this documentation is released under the same license as the* |lib_license|_.
 
-.. _lib_license: https://github.com/ThalesGroup/scio?tab=MIT-1-ov-file#MIT-1-ov-file
+.. _lib_license: https://github.com/eliegoudout/scio?tab=MIT-1-ov-file#MIT-1-ov-file
 
 .. |lib_license| replace:: *library's*

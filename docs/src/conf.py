@@ -41,7 +41,7 @@ import scio
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 project = "scio"
 author = "Élie Goudout"
-project_copyright = "2024–%Y, THALES"  # noqa: RUF001 ("EN" dash)
+project_copyright = "2024–2025: THALES | 2026: Élie Goudout"  # noqa: RUF001 ("EN" dash)
 release = scio.__version__
 version = release if release == "unknown" else ".".join(scio.__version__.split(".")[:2])
 
@@ -76,7 +76,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/ThalesGroup/scio",
+            "url": "https://github.com/eliegoudout/scio",
             "icon": "fab fa-github-square",
             "type": "fontawesome",
         },
@@ -239,7 +239,7 @@ copybutton_prompt_text = r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: 
 copybutton_prompt_is_regexp = True
 
 # -- Options for "sphinx.ext.linkcode" ---------------------------------------
-github_url = "https://github.com/ThalesGroup/scio"
+github_url = "https://github.com/eliegoudout/scio"
 ref = (  # Commit hash for PR builds, else checked out branch
     os.environ["READTHEDOCS_GIT_COMMIT_HASH"]
     if os.environ.get("READTHEDOCS_VERSION_TYPE", "") == "external"

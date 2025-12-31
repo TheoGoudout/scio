@@ -1,12 +1,9 @@
 [project]
 name = "scio-pypi"
-version = "1.1.0"
+version = "1.1.1.dev0"
 description = "Statistical Confidence from Internal Observations"
-authors = [{name = "Élie Goudout", email = "elie.goudout@thalesgroup.com"}]
-maintainers = [
-    {name = "Élie Goudout", email = "elie.goudout@thalesgroup.com"},
-    {name = "Élie Goudout", email = "eliegoudout@hotmail.com"},
-]
+authors = [{name = "Élie Goudout", email = "eliegoudout@hotmail.com"}]
+maintainers = [{name = "Élie Goudout", email = "eliegoudout@hotmail.com"}]
 requires-python = ">=3.12, <3.15"
 readme = "README.md"
 license = {file = "LICENSE"}

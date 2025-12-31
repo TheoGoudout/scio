@@ -18,8 +18,8 @@ from scio.recorder import Recorder
 # Let us first load an arbitrary Neural Network. We use a lightweight
 # `Tiniest <https://github.com/xvel/cifar10-tiniest>`_ architecture
 # trained on CIFAR10 and hosted on
-# `our hub <https://github.com/ThalesGroup/scio/tree/hub>`_. We also
-# prepare future input data for this tutorial.
+# `ThalesGroup's hub <https://github.com/ThalesGroup/scio/tree/hub>`_. We
+# also prepare future input data for this tutorial.
 
 import torch
 
