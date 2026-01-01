@@ -41,6 +41,10 @@
 
 <!-- End of Badges -->
 
+*This is a friendly fork of the original* [ThalesGroup/**scio**][thalesgroup_scio] *project*.
+
+[thalesgroup_scio]: https://www.github.com/ThalesGroup/scio
+
 
 # `scio`
 
