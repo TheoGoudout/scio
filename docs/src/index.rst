@@ -3,7 +3,8 @@ Welcome to ``scio``'s documentation!
 
 .. include:: ../../README.md
    :parser: myst_parser.sphinx_
-   :end-before: <!-- End of Badges -->
+   :start-after: <!-- START BADGES -->
+   :end-before: <!-- END BADGES -->
 
 .. include:: ../../README.md
    :parser: myst_parser.sphinx_

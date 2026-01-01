@@ -1,9 +1,12 @@
+<sup>*Friendly fork of the original* [ThalesGroup/**scio**][thalesgroup_scio] *project*</sup>
+
+[thalesgroup_scio]: https://www.github.com/ThalesGroup/scio
+
+
+<!-- START BADGES -->
 [![os][os_img]][os_target]
 [![python][python_img]][python_target]
-[![pypi][pypi_img]][pypi_target]
-[![typed][typed_img]][typed_target]
 [![license][license_img]][license_target]
-[![doi][doi_img]][doi_target]
 [![pipeline][pipeline_img]][pipeline_target]
 [![coverage][coverage_img]][coverage_target]
 [![ruff][ruff_img]][ruff_target]
@@ -24,13 +27,13 @@
 [license_img]: https://img.shields.io/github/license/eliegoudout/scio "Distributed under"
 [license_target]: https://github.com/eliegoudout/scio?tab=MIT-1-ov-file#MIT-1-ov-file
 
-[doi_img]: https://zenodo.org/badge/DOI/10.5281/zenodo.17160013.svg "Zenodo archive"
-[doi_target]: https://doi.org/10.5281/zenodo.17160013
+[doi_img]: https://zenodo.org/badge/DOI/10.5281/zenodo.________.svg "Zenodo archive"
+[doi_target]: https://doi.org/10.5281/zenodo.________
 
-[pipeline_img]: https://github.com/eliegoudout/scio/actions/workflows/ci.yml/badge.svg?branch=release "Pipeline status"
+[pipeline_img]: https://github.com/eliegoudout/scio/actions/workflows/ci.yml/badge.svg?branch=develop "Pipeline status"
 [pipeline_target]: https://github.com/eliegoudout/scio/actions
 
-[coverage_img]: https://codecov.io/github/eliegoudout/scio/graph/badge.svg?token=7L1KWAHGR6 "Test coverage"
+[coverage_img]: https://codecov.io/github/eliegoudout/scio/graph/badge.svg "Test coverage"
 [coverage_target]: https://codecov.io/github/eliegoudout/scio
 
 [ruff_img]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json "Linted and formatted with Ruff"
@@ -38,12 +41,7 @@
 
 [uv_img]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json "Developed with uv"
 [uv_target]: https://github.com/astral-sh/uv#readme
-
-<!-- End of Badges -->
-
-*This is a friendly fork of the original* [ThalesGroup/**scio**][thalesgroup_scio] *project*.
-
-[thalesgroup_scio]: https://www.github.com/ThalesGroup/scio
+<!-- END BADGES -->
 
 
 # `scio`
@@ -86,15 +84,9 @@ The full documentation can be found [**here**][docs]. You may learn more [about 
 <!-- START CITING -->
 If our library contributed to your research or project, please consider citing it. For convenience, we provide the following BibTeX entry for the entire code base. 
 ```BibTeX
-@software{ThalesGroup/scio,
-  title = {scio: {C}onfidence scores for {N}eural {N}etworks, made easy!},
-  author = {Élie Goudout and the scio community},
-  url = {github.com/ThalesGroup/scio},
-  doi = {10.5281/zenodo.17160013},
-  year = {2025}
-}
+Coming soon...
 ```
-To reference a particular release, get the DOI <a href="https://zenodo.org/search?q=parent.id%3A17160013&f=allversions%3Atrue&l=list&p=1&s=10&sort=version" title="Browse all releases">here</a>.
+<!-- To reference a particular release, get the DOI <a href="https://zenodo.org/search?q=parent.id%3A________&f=allversions%3Atrue&l=list&p=1&s=10&sort=version" title="Browse all releases">here</a>. -->
 <!-- END CITING -->
 
 ### Contributing 💫
