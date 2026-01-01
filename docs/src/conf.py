@@ -82,7 +82,7 @@ html_theme_options = {
         },
         {
             "name": "PyPI",
-            "url": "https://pypi.org/project/scio-pypi",
+            "url": "https://pypi.org/project/scio",
             "icon": "_static/pypi_logo.png",
             "type": "local",
         },

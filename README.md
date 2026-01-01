@@ -15,10 +15,10 @@
 [python_img]: https://img.shields.io/badge/python-3.12%20|%203.13%20|%203.14-blue "Compatible Python versions"
 [python_target]: https://devguide.python.org/versions
 
-[pypi_img]: https://img.shields.io/pypi/v/scio-pypi "Latest PyPI release"
-[pypi_target]: https://pypi.org/project/scio-pypi
+[pypi_img]: https://img.shields.io/pypi/v/scio "Latest PyPI release"
+[pypi_target]: https://pypi.org/project/scio
 
-[typed_img]: https://img.shields.io/pypi/types/scio-pypi "This package is typed"
+[typed_img]: https://img.shields.io/pypi/types/scio "This package is typed"
 [typed_target]: https://peps.python.org/pep-0561
 
 [license_img]: https://img.shields.io/github/license/eliegoudout/scio "Distributed under"
@@ -61,7 +61,7 @@
 
 ```bash
 # Install from PyPI
-pip install scio-pypi
+* Coming soon... *
 ```
 
 ----
