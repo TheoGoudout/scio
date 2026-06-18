@@ -1,4 +1,4 @@
-<sup>*Friendly fork of the original* [ThalesGroup/**scio**][thalesgroup_scio] *project*</sup>
+<sup>Archived because AI bad.</sup>
 
 [thalesgroup_scio]: https://www.github.com/ThalesGroup/scio
 
