@@ -1,8 +1,5 @@
 <sup>Archived because AI bad.</sup>
 
-[thalesgroup_scio]: https://www.github.com/ThalesGroup/scio
-
-
 <!-- START BADGES -->
 [![os][os_img]][os_target]
 [![python][python_img]][python_target]
