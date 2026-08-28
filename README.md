@@ -44,6 +44,8 @@
 
 # `scio`
 
+[![GreenSecOps](https://api.staging.greensecops.com/api/v1/badges/repositories/TheoGoudout/scio/develop.svg)](https://app.staging.greensecops.com/repositories/439d8b88-9c7d-4c5d-854c-6b499444d314)
+
 <div align="center">
   <h3>Confidence scores for Neural Networks, made easy!</h3>
   <p><i>“<strong>scio</strong> me nihil scire”</i></p>

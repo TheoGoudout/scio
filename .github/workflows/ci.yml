@@ -14,7 +14,13 @@ jobs:
         os: ["ubuntu-latest", "windows-latest"]  # Remove MacOS (billing + github.com/ThalesGroup/scio/issues/2)
         python-version: ["3.12", "3.13", "3.14"]
     runs-on: ${{ matrix.os }}
+    permissions:
+      id-token: write
     steps:
+      - name: GreenSecOps Telemetry
+        uses: green-sec-ops/telemetry@v1
+        with:
+          greensecops_url: ${{ vars.GREENSECOPS_URL || 'https://api.staging.greensecops.com' }}
       - name: Checkout
         uses: actions/checkout@v4
 
