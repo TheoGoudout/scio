@@ -3,8 +3,18 @@ name: CI
 on:
   push:
     branches: [develop, release]
+    paths:
+      - '**'
+      - '!docs/**'
   pull_request:
     branches: [develop, release]
+    paths:
+      - '**'
+      - '!docs/**'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-running: true
 
 jobs:
   ci:
@@ -20,6 +30,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          persist-credentials: false
 
       - name: Install uv and set python version
         uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
